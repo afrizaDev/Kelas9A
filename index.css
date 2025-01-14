@@ -85,3 +85,11 @@ table tbody tr:hover {
     background-color: #f1f1f1;
     cursor: pointer;
 }
+img{
+	max-width: 100%;
+	height: auto;
+	
+}
+p{
+	font-weight: bold;
+}
