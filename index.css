@@ -1,0 +1,87 @@
+/* Reset basic styles */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+}
+
+header.top-bar {
+    background-color: #007bff;
+    color: white;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.top-bar .logo h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffdd57; /* Hover color for links */
+}
+
+section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    margin-top: 50px;
+}
+table {
+    width: 80%;
+    margin: 10px auto;
+    border-collapse: collapse;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table thead {
+    background-color: #007bff;
+    color: white;
+}
+
+table th, table td {
+    padding: 10px 10px;
+    border: 1px solid #ddd;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
