@@ -11,18 +11,21 @@ body {
 }
 
 header.top-bar {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: #007bff;
     color: white;
-    padding-right: 10px;
-    padding-bottom: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 header.top-bar .logo h1 {
-    font-size: 26px;
-    margin: 10px;
+    font-size: 20px;
+    margin: 5px;
 }
 
 nav ul {
@@ -63,7 +66,7 @@ footer {
 }
 table {
     width: 90%;
-    margin:0 auto;
+    margin: 0 auto;
     overflow-x: auto;
     border-collapse: collapse;
     text-align: left;
@@ -75,10 +78,11 @@ table thead {
     color: white;
 }
 
-table th, table td {
-    margin:50px 0;
-    padding:2px;
-    font-size: clamp(12px,2.5vw,36px);
+table th,
+table td {
+    margin: 50px 0;
+    padding: 2px;
+    font-size: clamp(12px, 2.5vw, 36px);
     border: 1px solid #ddd;
 }
 
@@ -90,15 +94,23 @@ table tbody tr:hover {
     background-color: #f1f1f1;
     cursor: pointer;
 }
-img{
-	width: 90%;
-	overflow-x:auto;
-	margin: 0 auto;
-	
+img {
+    width: 90%;
+    overflow-x: auto;
+    margin: 0 auto;
 }
-p{
+p {
+    font-weight: bold;
+}
+#libur {
+    color: red;
+}
+marquee{
+	width: 100%;
+	margin-bottom: 10px;
+	border: solid #007bff;
+	display: flex;
 	font-weight: bold;
-}
-#libur{
-	color: red;
+	align-items: center;
+	justify-content: center;
 }
