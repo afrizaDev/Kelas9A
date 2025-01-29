@@ -116,7 +116,7 @@ marquee {
     justify-content: center;
 }
 .highlight {
-    background-color: rgb(100%,30%,0%) !important;
+    background-color: rgb(255,20,147) !important;
     color: white !important;
-    text-shadow: 0px 0px 10px ;
+    text-shadow: 0px 0px 10px white;
 }
