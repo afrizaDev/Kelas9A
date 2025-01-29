@@ -11,11 +11,11 @@ body {
 }
 
 header.top-bar {
-    position: fixed; 
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #007bff;
+    background-color: red;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -73,8 +73,8 @@ table {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-table thead {
-    background-color: #007bff;
+th {
+    background-color: red;
     color: white;
 }
 
@@ -105,12 +105,18 @@ p {
 #libur {
     color: red;
 }
-marquee{
-	width: 100%;
-	margin-bottom: 10px;
-	border: solid #007bff;
-	display: flex;
-	font-weight: bold;
-	align-items: center;
-	justify-content: center;
+marquee {
+    width: 100%;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: solid red;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+.highlight {
+    background-color: rgb(100%,30%,0%) !important;
+    color: white !important;
+    text-shadow: 0px 0px 10px ;
 }
