@@ -50,9 +50,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Tampilkan di halaman
     document.getElementById("prbesok").innerText = teksEsok;
-    document.getElementById("infobesok").innerText = teksEsok
+    document.getElementById("infobesok").innerText = teksEsok;
 
     if (hariId[hariIni]) {
         document.getElementById(hariId[hariIni]).classList.add("highlight");
     }
+    function loadData() {
+        fetch("data.json")
+            .then(response => response.json())
+            .then(data => {
+                let tbody = document.querySelector("#tabelpr tbody");
+                tbody.innerHTML = "";
+
+                data.forEach(item => {
+                    let row = `<tr>
+                            <td>${item.no}</td>
+                            <td>${item.pelajaran}</td>
+                            <td>${item.keterangan}</td>
+                        </tr>`;
+                    tbody.innerHTML += row;
+                });
+            })
+            .catch(error => console.error("Gagal memuat data:", error));
+    }
+    document.addEventListener("DOMContentLoaded", loadData);
 });
