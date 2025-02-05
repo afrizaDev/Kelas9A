@@ -55,23 +55,16 @@ document.addEventListener("DOMContentLoaded", function () {
     if (hariId[hariIni]) {
         document.getElementById(hariId[hariIni]).classList.add("highlight");
     }
-    function loadData() {
-        fetch("data.json")
-            .then(response => response.json())
-            .then(data => {
-                let tbody = document.querySelector("#tabelpr tbody");
-                tbody.innerHTML = "";
-
-                data.forEach(item => {
-                    let row = `<tr>
-                            <td>${item.no}</td>
-                            <td>${item.pelajaran}</td>
-                            <td>${item.keterangan}</td>
-                        </tr>`;
-                    tbody.innerHTML += row;
-                });
-            })
-            .catch(error => console.error("Gagal memuat data:", error));
-    }
-    document.addEventListener("DOMContentLoaded", loadData);
+    fetch(
+        "https://raw.githubusercontent.com/afrizaDev/Kelas9A/refs/heads/index/data.json"
+    )
+        .then(response => response.json())
+        .then(data => {
+            let tableBody = document.getElementById("dataPr");
+            data.forEach(item => {
+                let row = `<tr><td>${item.no}</td><td>${item.pelajaran}</td><td>${item.keterangan}</td></tr>`;
+                tableBody.innerHTML += row;
+            });
+        })
+        .catch(error => console.error("Gagal mengambil data:", error));
 });
