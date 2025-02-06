@@ -1,4 +1,8 @@
-[
-	{"info":"None","no":1,"pelajaran":"Bahasa Indonesia","keterangan":"Hal 20,no 1-4"},
-	{"no":2,"pelajaran":"Matematika","keterangan":"Hal 56-57"}
-]
+{
+	"pr" : [
+	{"no":1,"pelajaran":"None","keterangan":"None"}
+	],
+	"info" : [
+	{"teks":"None"}
+	]
+}
