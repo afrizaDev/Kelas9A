@@ -61,9 +61,13 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.json())
         .then(data => {
             let tableBody = document.getElementById("dataPr");
-            data.forEach(item => {
-                let row = `<tr><td>${item.no}</td><td>${item.pelajaran}</td><td>${item.keterangan}</td></tr>`;
+            let info = document.getElementById("info");
+            data.pr.forEach(pr => {
+                let row = `<tr><td>${pr.no}</td><td>${pr.pelajaran}</td><td>${pr.keterangan}</td></tr>`;
                 tableBody.innerHTML += row;
+            });
+            data.info.forEach(teks => {
+            	info.innerText = teks.teks;
             });
         })
         .catch(error => console.error("Gagal mengambil data:", error));
