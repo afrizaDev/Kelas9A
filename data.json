@@ -1,8 +1,8 @@
 {
 	"pr" : [
-	{"no":1,"pelajaran":"None","keterangan":"None"}
+	{"no":1,"pelajaran":"Nope","keterangan":"Nope"}
 	],
 	"info" : [
-	{"teks":"Besok menggunakan seragam pramuka\ndan membawa bekal serta air minum"}
+	{"teks":"Menggunakan seragam pramuka\ndan membawa bekal serta air minum."}
 	]
 }
