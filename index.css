@@ -6,8 +6,8 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f4f8;
+	  font-family: 'Amiri',serif;
+    background-color: #73A0C1;
 }
 
 header.top-bar {
@@ -15,8 +15,10 @@ header.top-bar {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: red;
-    color: white;
+    background-image: url('Background-topbar.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
     text-align: center;
     padding: 10px 0;
     z-index: 1000;
@@ -74,8 +76,8 @@ table {
 }
 
 th {
-    background-color: red;
-    color: white;
+    background-color: #CEE4FB;
+    color: black;
 }
 
 table th,
@@ -102,21 +104,9 @@ img {
 p {
     font-weight: bold;
 }
-#libur {
-    color: red;
-}
-marquee {
-    width: 100%;
-    margin-bottom: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border: solid red;
-    display: flex;
-    font-weight: bold;
-    align-items: center;
-    justify-content: center;
-}
+
 .highlight {
-    background-color: rgb(255,20,147) !important;
+    background-color: #73A0C1 !important;
     color: white !important;
     text-shadow: 0px 0px 10px white;
 }

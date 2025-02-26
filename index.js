@@ -55,6 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (hariId[hariIni]) {
         document.getElementById(hariId[hariIni]).classList.add("highlight");
     }
+    
     fetch(
         "https://raw.githubusercontent.com/afrizaDev/Kelas9A/refs/heads/index/data.json"
     )
